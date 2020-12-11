@@ -5,8 +5,7 @@ import "./../css/profile.css"
 
 export default class Profile extends Component {
     render() {
-        let currentUser = {}
-        data.photographs.map( photograph => (photograph.email === this.props.userLogin ? currentUser = photograph: null))
+        let currentUser = this.props.user
         return (
             <div className="profile">
                 <div className="profile-img">

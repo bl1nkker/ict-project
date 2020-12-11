@@ -20,9 +20,11 @@ import HeaderPhotograph from './components_photograph/HeaderPhotograph';
 import GetOrder from './components_photograph/GetOrder';
 import ProfilePhotograph from './components_photograph/ProfilePhotograph';
 
+import { connect } from 'react-redux'
+import {loginAction} from './redux/actions/loginActions'
 
 
-export default class Main extends Component {
+class Main extends Component {
   constructor(props){
     super(props)
     this.state = {
@@ -47,6 +49,7 @@ export default class Main extends Component {
     ))
 
     this.setState({customer_emails:[...cust_lst], photograph_emails:[...photo_lst]})
+
   }
 
   authUser = (username) =>{
@@ -61,9 +64,10 @@ export default class Main extends Component {
   render(){
 
     return (
-      <div className="grid-container">
+      
+        <div className="grid-container">
         {
-        this.state.userLogin === "" ? 
+        !this.props.currentUser ? 
         <Auth authUser={this.authUser}/>
         :(this.state.customer_emails.indexOf(this.state.userLogin) ?
         
@@ -72,7 +76,7 @@ export default class Main extends Component {
             <HeaderPhotograph />
             <Route path="/" exact render={ (props) => <HomePage {...props}/>}/>
             <Route path="/content-photograph" render={ (props) => <ContentPhotograph {...props} setOrder={this.setOrder}/>}/>
-            <Route path="/profile-photograph" render={ (props) => <ProfilePhotograph {...props} userLogin={this.state.userLogin}/>}/>
+            <Route path="/profile-photograph" render={ (props) => <ProfilePhotograph {...props} user={this.props.currentUser}/>}/>
             <Route path="/get-order"render={ (props) => <GetOrder {...props} currentOrder={this.state.currentOrder}/>} />
             <Route path="/about-us"render={ (props) => <About {...props} currentOrder={this.state.currentOrder}/>} />
           </Router>
@@ -81,23 +85,18 @@ export default class Main extends Component {
             <Header />
             <Route path="/" exact render={ (props) => <HomePage {...props}/>}/>
             <Route path="/content" render={ (props) => <Content {...props} setOrder={this.setOrder}/>}/>
-            <Route path="/profile" render={ (props) => <Profile {...props} userLogin={this.state.userLogin}/>}/>
+            <Route path="/profile" render={ (props) => <Profile {...props} user={this.props.currentUser}/>}/>
             <Route path="/order"render={ (props) => <Order {...props} currentOrder={this.state.currentOrder}/>} />
             <Route path="/about-us"render={ (props) => <About {...props} currentOrder={this.state.currentOrder}/>} />
           </Router>)
-        )
-          
-        
-          
-        
-        
-        }
-        
-        
-        
+        )    
+        } 
         <footer>All rights reserved</footer>
       </div>
+      
     );
   }
   
 }
+
+export default connect((state) => ({currentUser: state.user.currentUser}), {loginAction})(Main)

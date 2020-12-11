@@ -4,8 +4,7 @@ import "./../css/profile.css"
 
 export default class Profile extends Component {
     render() {
-        let currentUser = {}
-        data.customers.map( customer => (customer.email === this.props.userLogin ? currentUser = customer: null))
+        let currentUser = this.props.user
        return (
             <div className="profile">
                 <div className="profile-img">

@@ -1,11 +1,15 @@
-import Content from './components/Content'
-import Header from './components/Header'
 import  Main from './App_main'
 import "./css/auth.css"
 
+import { Provider } from 'react-redux'
+import store from './redux/store'
+
 function App() {
   return (
+    <Provider store={store}>
       <Main />
+    </Provider>
+      
   );
 }
 
