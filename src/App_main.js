@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
 
 import "./css/auth.css"
 
-import cust_data from './data/customer.json'
-import phot_data from './data/photog.json'
+import cust_data from './data/cst-accounts.json'
+import phot_data from './data/fl-accounts.json'
 
 import Auth from './components/Auth';
 import Header from './components/Header'

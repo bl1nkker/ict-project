@@ -7,7 +7,7 @@ export default class Header extends Component {
             <header className="app-header"> 
                 <Link to="/content-photograph">Find Job</Link>
                 <Link to="/profile-photograph">My Profile</Link>
-                <Link className='company-logo'>Vspyshka</Link>
+                <Link to="/" className='company-logo'>Vspyshka</Link>
                 <Link to="/about-us">About Us</Link>
                 <Link>Demo Version</Link>
                 

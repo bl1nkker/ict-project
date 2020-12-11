@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
-import data from '../data/data-photograph.json'
+import data from '../data/content-companies.json'
 import Filter from './Filter'
 import Product from './ProductPhotograph'
+import store from './../redux/store'
+
+import {Provider} from 'react-redux'
 
 
 export default class ContentCustomer extends Component {
@@ -29,29 +32,6 @@ export default class ContentCustomer extends Component {
         })
     }
 
-    addToCart = (product) => {
-        const cartItems = [...this.state.cartItems]
-        let alreadyInCart = false
-        cartItems.forEach( (item) =>{
-            if (item._id === product._id){
-                item.count += 1
-                alreadyInCart = true
-            }
-        })
-
-        if (!alreadyInCart){
-            cartItems.push({...product, count:1})  
-        }
-        this.setState({cartItems:[...cartItems]})
-        localStorage.setItem('cartItems', JSON.stringify(cartItems))
-    }
-
-    removeFromCart = (product) =>{
-        const updatedCart = [...this.state.cartItems.filter((item) => product._id !== item._id)]
-        this.setState({cartItems:[...updatedCart]})
-        localStorage.setItem('cartItems', JSON.stringify(updatedCart))
-    }
-
     filterProducts = (event) =>{
         if (event.target.value === 'ALL'){
             return this.setState({
@@ -74,9 +54,9 @@ export default class ContentCustomer extends Component {
     
     render() {
         return (
+            <Provider store={store}>
             <main>
                 <div className='content'>
-                    {/* Orders Content */}
                     <div className='main'>
                         <Filter 
                         count={this.state.products.length}
@@ -86,13 +66,13 @@ export default class ContentCustomer extends Component {
                         filterProducts={this.filterProducts}/>
 
                         <Product 
-                        products={this.state.products}
                         addToCart={this.addToCart}
                         setOrder={this.props.setOrder}
                         />
                     </div>
                 </div>
             </main>
+            </Provider>
         )
     }
 }

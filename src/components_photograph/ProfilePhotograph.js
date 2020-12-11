@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import data from './../data/photog.json'
+import data from './../data/fl-accounts.json'
 import orders from '../data/orders.json'
 import "./../css/profile.css"
 

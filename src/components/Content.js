@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import data from './../data/data.json'
+import data from './../data/content-freelancers.json'
 import Filter from './Filter'
 import Product from './Product'
 

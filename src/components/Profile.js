@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import data from '../data/customer.json'
+import data from '../data/cst-accounts.json'
 import "./../css/profile.css"
 
 export default class Profile extends Component {
