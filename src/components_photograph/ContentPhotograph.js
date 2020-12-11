@@ -2,10 +2,6 @@ import React, { Component } from 'react'
 import data from '../data/content-companies.json'
 import Filter from './Filter'
 import Product from './ProductPhotograph'
-import store from './../redux/store'
-
-import {Provider} from 'react-redux'
-
 
 export default class ContentCustomer extends Component {
     constructor(props){
@@ -54,7 +50,6 @@ export default class ContentCustomer extends Component {
     
     render() {
         return (
-            <Provider store={store}>
             <main>
                 <div className='content'>
                     <div className='main'>
@@ -72,7 +67,6 @@ export default class ContentCustomer extends Component {
                     </div>
                 </div>
             </main>
-            </Provider>
         )
     }
 }

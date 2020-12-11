@@ -2,9 +2,6 @@ import React, { Component } from 'react'
 import data from './../data/content-freelancers.json'
 import Filter from './Filter'
 import Product from './Product'
-import store from './../redux/store'
-import {Provider} from 'react-redux'
-
 
 export default class Content extends Component {
     constructor(props){
@@ -52,8 +49,7 @@ export default class Content extends Component {
     }
     
     render() {
-        return (
-            <Provider store={store}>     
+        return (   
                 <main>
                     <div className='content'>
                         {/* Orders Content */}
@@ -66,14 +62,12 @@ export default class Content extends Component {
                             filterProducts={this.filterProducts}/>
 
                             <Product 
-                            products={this.state.products}
                             addToCart={this.addToCart}
                             setOrder={this.props.setOrder}
                             />
                         </div>
                     </div>
                 </main>
-            </Provider>
         )
     }
 }
