@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import data from './../data/content-freelancers.json'
 import Filter from './Filter'
 import Product from './Product'
+import store from './../redux/store'
+import {Provider} from 'react-redux'
 
 
 export default class Content extends Component {
@@ -29,29 +31,6 @@ export default class Content extends Component {
         })
     }
 
-    addToCart = (product) => {
-        const cartItems = [...this.state.cartItems]
-        let alreadyInCart = false
-        cartItems.forEach( (item) =>{
-            if (item._id === product._id){
-                item.count += 1
-                alreadyInCart = true
-            }
-        })
-
-        if (!alreadyInCart){
-            cartItems.push({...product, count:1})  
-        }
-        this.setState({cartItems:[...cartItems]})
-        localStorage.setItem('cartItems', JSON.stringify(cartItems))
-    }
-
-    removeFromCart = (product) =>{
-        const updatedCart = [...this.state.cartItems.filter((item) => product._id !== item._id)]
-        this.setState({cartItems:[...updatedCart]})
-        localStorage.setItem('cartItems', JSON.stringify(updatedCart))
-    }
-
     filterProducts = (event) =>{
         if (event.target.value === 'ALL'){
             return this.setState({
@@ -74,25 +53,27 @@ export default class Content extends Component {
     
     render() {
         return (
-            <main>
-                <div className='content'>
-                    {/* Orders Content */}
-                    <div className='main'>
-                        <Filter 
-                        count={this.state.products.length}
-                        size={this.state.size}
-                        sort={this.state.sort}
-                        sortProducts={this.sortProducts}
-                        filterProducts={this.filterProducts}/>
+            <Provider store={store}>     
+                <main>
+                    <div className='content'>
+                        {/* Orders Content */}
+                        <div className='main'>
+                            <Filter 
+                            count={this.state.products.length}
+                            size={this.state.size}
+                            sort={this.state.sort}
+                            sortProducts={this.sortProducts}
+                            filterProducts={this.filterProducts}/>
 
-                        <Product 
-                        products={this.state.products}
-                        addToCart={this.addToCart}
-                        setOrder={this.props.setOrder}
-                        />
+                            <Product 
+                            products={this.state.products}
+                            addToCart={this.addToCart}
+                            setOrder={this.props.setOrder}
+                            />
+                        </div>
                     </div>
-                </div>
-            </main>
+                </main>
+            </Provider>
         )
     }
 }

@@ -34,16 +34,16 @@ class Product extends Component {
                             :
                     (<ul className='products'>
                             
-                            {this.props.content.map(product => (
-                                <li key={product._id}>
+                            {this.props.content.map(company => (
+                                <li key={company._id}>
                                     <div className='my-product'>
-                                        <a href={'#'+product._id} onClick={() => this.openModal(product)}>
-                                            <img src={product.image} alt={product.title}></img>
-                                            <p>{product.title}</p>
+                                        <a href={'#'+company._id} onClick={() => this.openModal(company)}>
+                                            <img src={company.image} alt={company.title}></img>
+                                            <p>{company.title}</p>
                                         </a>
                                         <div className='product-price photograph'>
-                                            <div>{product.price}</div>
-                                            <Link to="/get-order"><button onClick={() => this.props.setOrder(product)} className='button primary'>I can do it!</button></Link>
+                                            <div>{company.price}</div>
+                                            <Link to="/get-order"><button onClick={() => this.props.setOrder(company)} className='button primary'>I can do it!</button></Link>
                                         </div>
                                     </div>
                                 </li>))}
