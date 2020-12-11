@@ -1,0 +1,113 @@
+{
+  "products": [
+    {
+      "_id": "dress1",
+      "image": "https://birdinflight.imgix.net/wp-content/uploads/2016/07/master-of-photography_cover.jpg?fm=pjpg&q=70&fit=crop&crop=faces&w=630&h=355",
+      "title": "Danelya Nauryzbayeva",
+      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+      "availableSizes": ["X", "L", "XL", "XXL"],
+      "price": 29.9,
+      "camera": "Nikon 360 FPS",
+      "fullDescription":"One advanced diverted domestic sex repeated bringing you old. Possible procured her trifling laughter thoughts property she met way. Companions shy had solicitude favourable own. Which could saw guest man now heard but. Lasted my coming uneasy marked so should. Gravity letters it amongst herself dearest an windows by. Wooded ladies she basket season age her uneasy saw. Discourse unwilling am no described dejection incommode no listening of. Before nature his parish boy. Folly words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education is be dashwoods or an. Use off agreeable law unwilling sir deficient curiosity instantly. Easy mind life fact with see has bore ten. Parish any chatty can elinor direct for former. Up as meant widow equal an share least."
+    },
+    {
+      "_id": "dress2",
+      "image": "https://namillion.com/wp-content/uploads/2017/09/fotograf.jpg",
+      "title": "Madina Zhunusova",
+      "description": "I know all the trends by heart, I will take the most creative photography in your life",
+      "availableSizes": ["X", "M", "L"],
+      "price": 18.9,
+      "camera": "Nikon 1300Х",
+      "fullDescription":"I shoot with my camera, all popular lenses are available."
+    },
+    {
+      "_id": "dress3",
+      "image": "https://lh3.googleusercontent.com/proxy/mbfQQ0oGaNfA0XgJqJMb21v8-NT2fuqdbbliGPjLwh9CDxWbHMgpveFcTu2hXbN-uEzei5nfARPaRsz_SigHKaGptMGlFPcf",
+      "title": "Igor Stepanenko",
+      "description": "Expert in the field of film photography",
+      "availableSizes": ["X", "M", "L"],
+      "price": 14.9
+      ,
+      "camera": "Canon Mark-D",
+      "fullDescription": "Expert in the field of film photography, medalist of the Film Maestro 2018 exhibition, bronze medalist of Film Super 2019, finalist of Light-Art 2019 in the field of film photography"
+      
+    },
+    {
+      "_id": "dress4",
+      "image": "https://vse-kursy.com/uploads/posts/2019-06/1559739905_adult-1867699_1280.jpg",
+      "title": "Nikita Mayer",
+      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you",
+      "availableSizes": ["XL"],
+      "price": 25.9
+      ,
+      "camera": "Canon 250F",
+       "fullDescription": "In it except to so temper mutual tastes mother. Interested cultivated its continuing now yet are. Out interested acceptance our partiality affronting unpleasant why add. Esteem garden men yet shy course. Consulted up my tolerably sometimes perpetual oh. Expression acceptance imprudence particular had eat unsatiable. Had denoting properly jointure you occasion directly raillery. In said to of poor full be post face snug. Introduced imprudence see say unpleasing devonshire acceptance son. Exeter longer wisdom gay nor design age. Am weather to entered norland no in showing service. Nor repeated speaking shy appetite. Excited it hastily an pasture it observe. Snug hand how dare here too. "
+    },
+    {
+      "_id": "dress5",
+      "image": "https://www.ok-magazine.ru/images/cache/2016/6/13/resize_800_1200_true_crop_800_1200_0_0_q90_244321_9924048b4c2deaab913e14ae4.jpeg",
+      "title": "Mark Golubtsov",
+      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. ",
+      "availableSizes": ["X", "L", "XL"],
+      "price": 10.9
+      ,
+      "camera": "Nikon 8800X",
+      "fullDescription":"Effect if in up no depend seemed. Ecstatic elegance gay but disposed. We me rent been part what. An concluded sportsman offending so provision mr education. Bed uncommonly his discovered for estimating far. Equally he minutes my hastily. Up hung mr we give rest half. Painful so he an comfort is manners. Article nor prepare chicken you him now. Shy merits say advice ten before lovers innate add. She cordially behaviour can attempted estimable. Trees delay fancy noise manor do as an small. Felicity now law securing breeding likewise extended and. Roused either who favour why ham."
+    },
+    {
+      "_id": "dress6",
+      "image": "https://cameralabs.org/media/lab16/post/05-16/25/fotograf-Benzhamin-Vnuk_31.jpg",
+      "title": "Daura Kinzhigarinova",
+      "description": "Portrait master",
+      "availableSizes": ["XL", "XXL"],
+      "price": 49.9
+      ,
+      "camera": "Nikon D2300",
+      "fullDescription": "Expert in the field of film photography, medalist of the Film Maestro 2018 exhibition, bronze medalist of Film Super 2019, finalist of Light-Art 2019 in the field of film photography"
+      
+    },
+    {
+      "_id": "dress7",
+      "image": "https://i.pinimg.com/originals/7f/fa/22/7ffa22b9f64043ee32d3ae163992ec89.jpg",
+      "title": "Dauren Kinzhigarinov",
+      "description": "Effect if in up no depend seemed. Ecstatic elegance gay but disposed. We me rent been part what. An concluded sportsman offending so provision mr education. Bed uncommonly his discovered for estimating far. Equally he minutes my hastily. Up hung mr we give rest half. Painful so he an comfort is manners. Article nor prepare chicken you him now. Felicity now law securing breeding likewise extended and. Roused either who favour why ham.",
+      "availableSizes": ["XL", "XXL"],
+      "price": 49.9
+      ,
+      "camera": "Nikon D1100",
+      "fullDescription": "Expert in the field of film photography, medalist of the Film Maestro 2018 exhibition, bronze medalist of Film Super 2019, finalist of Light-Art 2019 in the field of film photography"
+    },
+    {
+      "_id": "dress8",
+      "image": "https://st2.depositphotos.com/1371678/7404/i/600/depositphotos_74040813-stock-photo-studio-portrait-photography-business.jpg",
+      "title": "Dauren Ushakov",
+      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+      "availableSizes": ["XL", "XXL"],
+      "price": 49.9
+      ,
+      "camera": "Nikon 1000PX",
+      "fullDescription": "Expert in the field of film photography, medalist of the Film Maestro 2018 exhibition, bronze medalist of Film Super 2019, finalist of Light-Art 2019 in the field of film photography"
+    },
+    {
+      "_id": "dress9",
+      "image": "https://st2.depositphotos.com/1606463/7596/i/600/depositphotos_75963481-stock-photo-goodlooking.jpg",
+      "title": "Anton Saebalovish",
+      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+      "availableSizes": ["X", "L", "XL"],
+      "price": 10.9
+      ,
+      "camera": "Canon DX9",
+      "fullDescription": "Expert in the field of film photography, medalist of the Film Maestro 2018 exhibition, bronze medalist of Film Super 2019, finalist of Light-Art 2019 in the field of film photography"
+    },
+    {
+      "_id": "dress10",
+      "image": "https://avatars.mds.yandex.net/get-pdb/199965/e9455cfc-3d05-4846-9ae8-b2d2f369d9b9/s1200",
+      "title": "Mark Sharaebof",
+      "description": "I know all the trends by heart, I will take the most creative photography in your life",
+      "availableSizes": ["X", "L", "XL"],
+      "price": 10.9,
+      "camera": "Marks 8A",
+      "fullDescription": "Expert in the field of film photography, medalist of the Film Maestro 2018 exhibition, bronze medalist of Film Super 2019, finalist of Light-Art 2019 in the field of film photography"
+    }
+  ]
+}

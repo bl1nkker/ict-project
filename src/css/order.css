@@ -1,0 +1,22 @@
+.order-img img{
+    height: 35rem;
+    width: 28rem;
+}
+
+.order{
+    display: grid;
+    padding: 1em;
+    grid-template-columns: 20% 5% 40% 35%;
+    grid-template-areas: 
+    'img img title title'
+    'img img description description'
+    'img img tools makeOrder';
+}
+
+.order-img{grid-area: img;}
+.order-title{grid-area: title; text-align: center; font-size: 2.4em;}
+.order-description{grid-area: description;}
+.order-tools{grid-area: tools;}
+.order-btn{grid-area: makeOrder; max-width: 7em; max-height: 3em; margin-left: 15em;}
+
+.order-tools li{list-style-type: none;}

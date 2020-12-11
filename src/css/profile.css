@@ -1,0 +1,66 @@
+.profile{
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: 
+    "img info info info"
+    "img description description description"
+    "img description description description"
+    "orders orders orders orders"
+    ;
+}
+
+.profile-info{
+    grid-area: info;
+    padding: 1em;
+
+}
+
+.profile-img{
+    grid-area: img;
+    padding: 1em;
+}
+
+.profile-img img{
+    height: 45rem;
+    width: 30rem;
+}
+
+.profile-description{
+    grid-area: description;
+    padding: 1em;
+}
+
+.profile-orders:not(:first-child){
+    grid-area: orders;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profile-order-img img{
+    height: 15rem;
+    width: 10rem;
+}
+
+
+.profile-order{
+    border: 10px solid transparent;
+    border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transparent 10px, transparent 20px, #F8463F 20px, #F8463F 30px,transparent 30px, transparent 40px);
+    padding: .3em;
+    margin: .5em;
+    display: grid;
+    grid-template-columns: 25% 15% 5% 55%;
+    grid-template-areas: 
+    "img img img description"
+    "img img img info"
+    "img img img grade";
+}
+
+.profile-order-img{grid-area: img;}
+
+.profile-order-description{grid-area: description;}
+.profile-order-info{grid-area: info; color: gray; font-weight: 100; text-align: right;}
+.profile-order-grade{grid-area: grade;}

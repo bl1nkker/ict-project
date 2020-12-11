@@ -1,0 +1,55 @@
+.about-title{
+    margin-top: 1em;
+    text-align: center;
+
+    font-weight: 100;
+    font-size: 5em;
+}
+
+.about-img{
+    text-align: center;
+    background-color: rgb(37, 13, 13);
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.about-history{
+    text-align: center;
+    color: gray;
+    font-size: 1.5em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.about-team{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-team-member{
+    width: 15em;
+    border: 2px gray solid;
+    display: grid;
+    margin-bottom: 2em;
+    grid-template-areas: 
+    "img img"
+    "img img"
+    "title title"
+    "info contacts";
+}
+
+
+
+.about-team-member-img{grid-area: img;padding: 1em; text-align: center;}
+.about-team-member-title{grid-area: title; text-align: center; padding: 1em;}
+.about-team-member-info{grid-area: info; font-size:.7em; padding:1em}
+.about-team-member-contacts{grid-area: contacts; font-size:.7em; text-align: right; padding:1em}
+
+.about-team-member img{
+    
+    height: 25rem;
+    width: 20rem;
+}
+
