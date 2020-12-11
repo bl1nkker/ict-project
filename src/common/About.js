@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import team from './../data/company-group.json'
+import team from './../data/team-info.json'
 import "./../css/about.css"
 import logo from './../imports/logo.jpg'
 
