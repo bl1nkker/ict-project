@@ -9,7 +9,7 @@ export default class Header extends Component {
                 <Link to="/profile">My Profile</Link>
                 <Link to="/" className='company-logo'>Vspyshka</Link>
                 <Link to="/about-us">About Us</Link>
-                <Link>Demo Version</Link>
+                <Link to="/demo-version">Demo Version</Link>
                 
             </header>
         )
