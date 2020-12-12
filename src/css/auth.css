@@ -1,9 +1,19 @@
+.grid-container{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(168, 168, 168, 0.6)), url('https://bigpicture.ru/wp-content/uploads/2015/01/bnwmountains15.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .auth-form{
-    margin-top: 7em;
+
+    margin-top: 12em;
     margin-bottom: 3em;
-    margin-left: 28em;
+    margin-left: 33em;
     margin-right: 28em;
-    font-size: .7em;
+    font-size: 1em;
+    width: 20em;
 }
 
 .submit-btn{
@@ -12,4 +22,21 @@
 
 .checktext{
     margin-left: 1em;
+}
+
+.optional{
+    font-size: .8em;
+    font-weight: 100;
+    color: rgb(141, 141, 141);
+}
+
+.form-control{
+    height: 2em;
+    width: 19em;
+}
+
+input[type="email"],
+input[type="password"]{
+    font-size: 1em;
+    font-weight: 100;
 }

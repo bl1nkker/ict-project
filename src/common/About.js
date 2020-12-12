@@ -30,7 +30,7 @@ Vspyshkа Inc.- крупнейшая казахстанская корпорац
                     {team.team_members.map( team_member =>(
                         <div className="about-team-member">
                             <div className="about-team-member-img">
-                                <img src={require('./../imports/logo.jpg')} alt="team_member_img"/>
+                                <img src={team_member.img} alt="team_member_img"/>
                             </div>
 
                             <div className="about-team-member-title">
@@ -39,7 +39,7 @@ Vspyshkа Inc.- крупнейшая казахстанская корпорац
                             </div>
 
                             <div className="about-team-member-info">
-                                <p>{team_member.geo_country}</p>
+                                <p>{team_member.geo_country},</p>
                                 <p>{team_member.geo_city}</p>
                             </div>
 

@@ -28,7 +28,7 @@ body,
     'header'
     'main'
     'footer';
-    grid-template-rows: 7rem 1fr 7rem;
+    grid-template-rows: 9rem 1fr 9rem;
     grid-template-columns: 1fr;
     height: 100%;
 }
@@ -67,14 +67,7 @@ main{
     
 }
 
-footer{
-  display: flex;
-    background-color: var(--head-foot-bg-color);
-    color: var(--head-foot-text-color);
-    grid-area: footer;
-    justify-content: center;
-    align-items: center;
-}
+
 
 /*          Content CSS          */
 .content{
