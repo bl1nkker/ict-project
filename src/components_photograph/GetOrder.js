@@ -18,8 +18,8 @@ export default class GetOrder extends Component {
                 </div >
                 
                 <ul className='order-tools'> 
-                    <li>Camera: {this.props.currentOrder.camera}</li>
-                    <li>Lense: {this.props.currentOrder.camera}</li>
+                    <li><strong>Date</strong>: {this.props.currentOrder.date}</li>
+                    <li><strong>Price</strong>: {this.props.currentOrder.price}</li>
                 </ul>
                 <button className='button primary order-btn'> Make Order </button>
             </div>

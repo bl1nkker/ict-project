@@ -18,11 +18,14 @@
 }
 
 .profile-img{
+    background-color: rgb(197, 197, 197);
+    border-radius: 35px;
     grid-area: img;
     padding: 1em;
 }
 
 .profile-img img{
+    border-radius: 35px;
     height: 45rem;
     width: 30rem;
 }
@@ -32,7 +35,7 @@
     padding: 1em;
 }
 
-.profile-orders:not(:first-child){
+.profile-orders{
     grid-area: orders;
     padding: 1em;
     display: flex;
@@ -42,6 +45,7 @@
 }
 
 .profile-order-img img{
+    
     height: 15rem;
     width: 10rem;
 }
@@ -53,6 +57,7 @@
     padding: .3em;
     margin: .5em;
     display: grid;
+    width:30em;
     grid-template-columns: 25% 15% 5% 55%;
     grid-template-areas: 
     "img img img description"
